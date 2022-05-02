@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+}
+
+
+.header h1 {
+	font-size: 40px;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	padding: 5px;
+	color: white;
+	animation: topchange 2s linear;
+	animation-fill-mode: forwards;
+	box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.9);
+}
+@keyframes topchange {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+}
+
+@media screen and (max-width: 412px) {
+	@keyframes topchange {
+		from {border-top: 10px solid white;}
+		to {border-top: 2px solid white;}
+
+		from {border-bottom: 10px solid white;}
+		to {border-bottom: 2px solid white;}
+
+		from {top: 55%;}
+		to {top: 55%;}
+
+		from {left:50%}
+		to {left: 50%;}
+
+		from {padding: 10px;}
+		to {padding: 3px;}
+
+		from {font-size: 0px;}
+		to {font-size: 25px;}
+
+		from {opacity: 0%;}
+		to {opacity: 100%;}
+		
+		from {width: 0%;}
+		to {width: 100%;}
+
+	}
+}
+
+.access_buttons a {
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+	transition: 1s ease-in-out;
+	animation: fadein 3s linear;
+	animation-fill-mode: forwards;
+	opacity: 0%;
+}
+@keyframes fadein {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+
+}
+.access_buttons a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: 0.5s;
+}
+
+
+
+.alookie_row {
+	margin-top: 100px;
+}
+.alookie_elementary h3 {
+	font-size: 100px;
+	margin-bottom: 50px;
+}
+.alookie_elementary p {
+	font-size: 15px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/*Miyazaki City content*/
+
+.miyazaki_city h3 {
+	font-size: 100px;
+	margin-bottom: 50px;
+	margin-top: 150px;
+}
+.miyazaki_city p {
+	font-size: 15px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/*Haida Gwaii content*/
+
+.haida_gwaii h3 {
+	font-size: 100px;
+	margin-bottom: 50px;
+	margin-top: 150px;
+}
+.haida_gwaii p {
+	font-size: 15px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+/*Kwalikum content*/
+
+.kwalikum h3 {
+	font-size: 100px;
+	margin-bottom: 50px;
+	margin-top: 150px;
+}
+.kwalikum p {
+	font-size: 15px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/*Buttons for navigation to the top of the page*/
+
+.header_top {
+	text-decoration: none;
+}
+.header_top a {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 10px;
+	transition: 1s;
+}
+.header_top a:hover {
+	text-decoration: none;
+	background-color: rgba(900, 900, 900, 1.0);
+	color: black;
+	box-shadow: 5px 5px 10px black;
+	font-weight: bold;
+}
+.footer {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	height: 20px;
+}
+.footer p {
+	font-size: 12px;
+}
